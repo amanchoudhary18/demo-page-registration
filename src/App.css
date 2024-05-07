@@ -1,38 +1,170 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.mobile-nav {
+  box-shadow: 0px 1px 2px 0px #00000026;
+}
+
+/* side cover*/
+.side-cover {
+  background-image: url("./assets/side-cover.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.side-cover .textbox {
+  width: 60%;
+}
+
+/* registration tab */
+.tabs {
+  width: max-content;
+}
+
+.tab {
+  height: 48px;
+  padding: 10px 50px;
+  border-radius: 6px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* input field */
+input {
+  height: 64px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input::placeholder {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* seperator */
+.separator {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #ccc;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* roboto text */
+.text-sm-roboto {
+  font-family: "Roboto";
+  font-size: 22px;
+  line-height: 38px;
+}
+
+.text-lg-roboto {
+  font-family: "Roboto";
+  font-size: 42px;
+  line-height: 49.22px;
+}
+
+/* poppins text */
+.text-md-poppins {
+  font-family: "Poppins";
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.text-md-sm-poppins {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.text-sm-poppins {
+  font-family: "Poppins";
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.text-xs-poppins {
+  font-family: "Poppins";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* bold css */
+.bold {
+  font-weight: 500;
+}
+
+.bolder {
+  font-weight: 600;
+}
+
+/* text underline */
+.text-underline {
+  text-decoration: underline;
+}
+
+.secondary-button {
+  height: 58px;
+}
+@media screen and (max-width: 450px) {
+  input {
+    height: 42px;
   }
-  to {
-    transform: rotate(360deg);
+
+  input::placeholder {
+    font-family: "Poppins";
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  /* roboto text */
+  .text-sm-roboto {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18.75px;
+  }
+
+  .text-lg-roboto {
+    font-size: 20px;
+    line-height: 23.44px;
+  }
+
+  /* poppins text */
+  .text-md-poppins {
+    font-family: "Poppins";
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .text-md-sm-poppins {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .text-sm-poppins {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .text-xs-poppins {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .secondary-button {
+    height: 42px;
+  }
+
+  .tabs {
+    width: 100%;
+  }
+
+  .tab {
+    height: 34px;
+    border-radius: 6px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
   }
 }
